@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+        }
+body{
+/* background-color: #E1D4BB; */
+background: linear-gradient(60deg,hsl(199, 53%, 58%),#77767d,#ce8f47,#4fd523);
+animation: color 10s ease-in-out infinite;
+background-size: 300% 300%;
+    }
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+.flex-container{
+    display:flex ;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* background-color: #f4f4f4; */
+}
+
+.flex-cont{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: #ccc;
+}
+/* .flex-cont .heading .h1{
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+} */
+
+
+
+
+
+.grade{
+ background: #f4f3 ;
+ border: #ccc solid 10px;
+ margin: 10px;
+ padding: 10px;
+ text-align: center;
+ border-radius: 10px;
+ /* width:500px; */
+ /* flex: grow,shrink,basis */
+ flex: 1;
+}
+.x{
+    display: inline;
+    
+}
+
+/* Media queries */
+/* Mobile */
+@media(max-width: 768px) {
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    marquee{
+        
+        behavior:slide;
+        
+        /* width: 200%; */
+        font-size: px;
+    }
+
+    .flex-cont{
+        flex-direction: column;
+        align-items: center;
+        flex: 100%;
+            max-width: 100%;
+    }
+    .heading{
+        font-size: 10px;
+    }
+}
+
+
+
+/* animation */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.circle{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.logo{
+    position: absolute;
+    width: 38px;
+    height:44px; 
+    background: url(logo.png);
+    background-size:contain;
+    filter: contrast(1.5);
+    
+}
+
+.text{
+    position:absolute;
+    width: 90%;
+    height: 90%;
+    animation: rotateText 5s linear infinite;
+    align-items:center ;
+}
+
+@keyframes rotateText {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+.text span{
+    position: absolute;
+    left:50%;
+    font-size: 65%;
+    transform-origin: 0 50px;
+}
+
+
+
